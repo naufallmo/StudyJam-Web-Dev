@@ -1,4 +1,3 @@
-// ===== HOME PAGE - CHANGING TEXT =====
 const changingText = document.getElementById("changingText");
 
 if (changingText) {
@@ -14,10 +13,9 @@ if (changingText) {
     setInterval(() => {
         index = (index + 1) % texts.length;
         changingText.textContent = texts[index];
-    }, 2000); // Change every 2 seconds
+    }, 2000);
 }
 
-// ===== HOME PAGE - EXPLORE BUTTON =====
 const exploreBtn = document.getElementById("exploreBtn");
 const btnMessage = document.getElementById("btnMessage");
 
@@ -25,7 +23,6 @@ if (exploreBtn && btnMessage) {
     exploreBtn.addEventListener("click", () => {
         btnMessage.textContent = "🎉 Let's explore! Check out my projects below!";
         
-        // Smooth scroll after 1 second
         setTimeout(() => {
             window.scrollTo({
                 top: 800,
@@ -35,7 +32,6 @@ if (exploreBtn && btnMessage) {
     });
 }
 
-// ===== CONTACT FORM - VALIDATION =====
 const contactForm = document.getElementById("contactForm");
 const nameInput = document.getElementById("nameInput");
 const emailInput = document.getElementById("emailInput");
@@ -51,7 +47,6 @@ if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
         
-        // Clear previous errors
         nameError.classList.remove("show");
         emailError.classList.remove("show");
         messageError.classList.remove("show");
@@ -62,7 +57,6 @@ if (contactForm) {
         
         let hasError = false;
         
-        // Validate Name
         if (nameInput.value.trim() === "") {
             nameError.textContent = "Please enter your name";
             nameError.classList.add("show");
@@ -75,7 +69,6 @@ if (contactForm) {
             hasError = true;
         }
         
-        // Validate Email
         if (emailInput.value.trim() === "") {
             emailError.textContent = "Please enter your email";
             emailError.classList.add("show");
@@ -88,7 +81,6 @@ if (contactForm) {
             hasError = true;
         }
         
-        // Validate Message
         if (messageInput.value.trim() === "") {
             messageError.textContent = "Please enter your message";
             messageError.classList.add("show");
@@ -101,18 +93,15 @@ if (contactForm) {
             hasError = true;
         }
         
-        // If no errors, show success
         if (!hasError) {
             console.log("Form submitted!");
             console.log("Name:", nameInput.value);
             console.log("Email:", emailInput.value);
             console.log("Message:", messageInput.value);
             
-            // Hide form and show success
             contactForm.style.display = "none";
             successMsg.classList.add("show");
             
-            // Reset after 5 seconds
             setTimeout(() => {
                 contactForm.reset();
                 contactForm.style.display = "flex";
@@ -122,6 +111,5 @@ if (contactForm) {
     });
 }
 
-// ===== CONSOLE MESSAGE =====
 console.log("👋 Welcome to my portfolio!");
 console.log("💻 Built with HTML, CSS, and JavaScript");
