@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Naufal Mohammad Adhi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h2 class="logo">Naufal</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <h1>Get In Touch</h1>
+        <div class="line"></div>
+        <p class="subtitle-text">Feel free to reach out for collaborations or a friendly chat</p>
+
+        <div class="contact-layout">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>I'm always open to discussing new projects and creative ideas.</p>
+
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:naufaladhi@student.ub.ac.id">naufaladhi@student.ub.ac.id</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Malang, East Java, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon">🎓</span>
+                        <div>
+                            <h3>University</h3>
+                            <p>Universitas Brawijaya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Connect With Me</h3>
+                <div class="social-buttons">
+                    <a href="https://github.com/naufallmo" target="_blank" class="social-btn">
+                        <span>💻</span> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/naufal-mohammad-adhi" target="_blank" class="social-btn">
+                        <span>💼</span> LinkedIn
+                    </a>
+                    <a href="https://instagram.com/naufallmo" target="_blank" class="social-btn">
+                        <span>📸</span> Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="form-box">
+                <h2>Send a Message</h2>
+                <form id="contactForm">
+                    <label>Your Name *</label>
+                    <input type="text" id="nameInput" placeholder="Enter your name" required>
+                    <p id="nameError" class="error"></p>
+
+                    <label>Your Email *</label>
+                    <input type="email" id="emailInput" placeholder="your.email@example.com" required>
+                    <p id="emailError" class="error"></p>
+
+                    <label>Your Message *</label>
+                    <textarea id="messageInput" rows="6" placeholder="Write your message..." required></textarea>
+                    <p id="messageError" class="error"></p>
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMsg" class="success-box">
+                    <div class="success-icon">✓</div>
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for reaching out. I'll get back to you soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Naufal Mohammad Adhi</p>
+        <div class="socials">
+            <a href="https://github.com/naufallmo" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/naufal-mohammad-adhi" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com/naufallmo" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
